@@ -49,8 +49,6 @@ def analyze():
     # else: 
     #     print('there is no bci data')
 
-
-
     # predict
     resultVideo = predictVideo(video)
     resultVoice = predictVoice(voice)

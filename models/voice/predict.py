@@ -49,3 +49,6 @@ def predictVoice(data):
     return render_template("resultvideo.html", hasil=hasil)
     # hasilakhir = (result, extracted)
     # return redirect(url_for('.predict_result', result=result, filename=f.filename))
+
+
+    
