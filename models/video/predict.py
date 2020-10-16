@@ -4,14 +4,14 @@ import os
 from tensorflow.keras.models import load_model
 import tensorflow as tf
 
-model = load_model('model.h5')
+# model = load_model('model.h5')
 
-def predict(frame):
+def predictVideo(frame):
     preprocessedFrame = preprocessing(frame);
 
     print('predic' + str(len(preprocessedFrame)))
     frame = preprocessedFrame[None,:]
-    result = model.predict(frame)
+    # result = model.predict(frame)
     # result = 3
     return result
 

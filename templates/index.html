@@ -10,14 +10,17 @@
 <body>
     <!-- Video Element & Canvas -->
     <div id="play-area">
-        <div class="play-area-sub">
+        <form id="myForm" class="play-area-sub">
             <video id="stream" width="720" height="480"></video>
-        </div>
+        </form>
     </div> 
 
     <input type="file" accept="audio/*;capture=microphone"> 
 
     <button id="btn-capture" type="button" class="btn btn-primary btn-lg mr-1">Analyze</button>
+
+    <canvas style="display: block;" id="capture" width="320" height="240"></canvas>
+
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js" integrity="sha256-yr4fRk/GU1ehYJPAs8P4JlTgu0Hdsp4ZKrx8bDEDC3I=" crossorigin="anonymous"></script>
     <script type="text/javascript" charset="utf-8">
